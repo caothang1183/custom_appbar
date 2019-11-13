@@ -61,12 +61,12 @@ flutter:
         - asset: assets/fonts/OpenSans/OpenSans-Regular.ttf
         - asset: assets/fonts/OpenSans/OpenSans-Bold.ttf
           weight: 600
-        - asset: assets/fonts/OpenSans-Italic.ttf
+        - asset: assets/fonts/OpenSans/OpenSans-Italic.ttf
           style: italic
     - family: Montserrat
       fonts:
-        - asset: assets/fonts/Montserrat/Montserrat-Regular.ttf
-        - asset: assets/fonts/Montserrat/Montserrat-Bold.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-Thin.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-Medium.ttf
           weight: 600
         - asset: assets/fonts/Montserrat/Montserrat-Italic.ttf
           style: italic

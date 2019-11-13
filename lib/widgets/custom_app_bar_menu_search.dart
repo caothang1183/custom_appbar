@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 class AppBarMenuSearchWidget extends StatelessWidget
     implements PreferredSizeWidget {
     final double height;
+    final Color mainColor;
 
     const AppBarMenuSearchWidget({
         Key key,
         @required this.height,
+        this.mainColor = Colors.blue,
     }) : super(key: key);
 
     @override
@@ -28,10 +30,10 @@ class AppBarMenuSearchWidget extends StatelessWidget
                             colors: <Color>[Colors.white, Colors.white]),
                     ),
 
-                    child: Padding(
-                        padding: EdgeInsets.all(30.0),
+//                    child: Container(
+//                        padding: EdgeInsets.all(30.0),
                         child: Container(
-                            color: Colors.blue,
+                            color: mainColor,
                             padding: EdgeInsets.all(5),
                             child: Row(
                                 children: <Widget>[
@@ -60,7 +62,7 @@ class AppBarMenuSearchWidget extends StatelessWidget
                                 ],
                             ),
                         ),
-                    ),
+//                    ),
                 ),
             ],
         );

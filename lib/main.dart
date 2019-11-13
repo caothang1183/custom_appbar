@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_custom_appbar/pages/home.dart';
 
 void main() => runApp(App());
@@ -6,6 +7,10 @@ void main() => runApp(App());
 class App extends StatelessWidget {
     @override
     Widget build(BuildContext context) {
+        SystemChrome.setPreferredOrientations([
+            DeviceOrientation.portraitUp,
+            DeviceOrientation.portraitDown,
+        ]);
         return MaterialApp(
             debugShowCheckedModeBanner: false,
             title: 'Flutter AppBar Custom',
@@ -19,6 +24,6 @@ ThemeData _theme() =>
     ThemeData(
         fontFamily: 'Montserrat',
         canvasColor: Colors.white,
-        primaryColor: Colors.blue,
+        primaryColor: Colors.orangeAccent,
     );
 
