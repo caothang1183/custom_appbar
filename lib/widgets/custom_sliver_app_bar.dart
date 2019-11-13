@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CustomSliverAppBar extends SliverPersistentHeaderDelegate {
@@ -22,7 +23,9 @@ class CustomSliverAppBar extends SliverPersistentHeaderDelegate {
             overflow: Overflow.visible,
             children: <Widget>[
                 Image.asset(
-                    'assets/images/background.jpg', fit: BoxFit.cover,),
+                    'assets/images/background.jpg',
+                    fit: BoxFit.cover,
+                ),
                 Positioned(
                     top: 5.0,
                     left: 10.0,

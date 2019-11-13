@@ -18,26 +18,34 @@ class CustomDrawerHeader extends StatelessWidget {
                 ])
             ),
             child: Container(
+
                 child: Column(
                     children: <Widget>[
-                        Material(
-                            borderRadius: BorderRadius.all(
-                                Radius.circular(60.0)),
-                            child: Padding(
-                                padding: EdgeInsets.all(
-                                    15.0),
-                                child: Image.asset(
-                                    'assets/images/logo.png',
-                                    height: 70,
-                                    width: 70,),
+                        Container(
+                            padding: EdgeInsets.all(2.0),
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.all(Radius.circular(100.0)),
+                                color: Colors.black
                             ),
+                          child: Material(
+                              borderRadius: BorderRadius.all(
+                                  Radius.circular(60.0)),
+                              child: Padding(
+                                  padding: EdgeInsets.all(
+                                      15.0),
+                                  child: Image.asset(
+                                      'assets/images/logo.png',
+                                      height: 70,
+                                      width: 70,),
+                              ),
+                          ),
                         ),
                         Padding(
-                            padding: const EdgeInsets.all(5.0),
+                            padding: const EdgeInsets.all(2.0),
                             child: Text('Flutter Navigation',
                                 style: TextStyle(
                                     color: Colors.white,
-                                    fontSize: 22.0,
+                                    fontSize: 20.0,
                                     fontStyle: FontStyle.italic
                                 ),
                             ),
